@@ -1,13 +1,13 @@
 # RTSP stream to Prusa Connect
 
-This is a simple script that will take an snapshot at a regular interval from an RTSP stream and upload it to the [Prusa Connect](https://connect.prusa3d.com/) [Camera API](https://connect.prusa3d.com/docs/cameras/).
+This is a simple script that will take an snapshot at a regular interval from an [RTSP stream](https://en.wikipedia.org/wiki/Real-Time_Streaming_Protocol) and upload it to the [Prusa Connect](https://connect.prusa3d.com/) [Camera API](https://connect.prusa3d.com/docs/cameras/).
 
 I am personally using this to use a [Reolink E1 Zoom camera](https://reolink.com/product/e1-zoom/) with Prusa Connect.
 
 ## Requirements
 
 - A copy of this repository
-- Docker Desktop (or Docker Community Edition and Docker Compose on Linux)
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/) (or Docker Community Edition and Docker Compose on Linux)
 - A camera that supports RTSP streaming
 - A Prusa Connect account
 
