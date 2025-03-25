@@ -1,0 +1,14 @@
+[Unit]
+Description=rtsp2prusa
+Requires=docker.service
+After=docker.service
+
+[Service]
+Restart=always
+User=spkane
+Group=docker
+ExecStart=/usr/bin/docker compose --project-directory /home/spkane/dev/spkane/rtsp2prusa -f /home/spkane/dev/spkane/rtsp2prusa/docker-compose.yaml up
+ExecStop=/usr/bin/docker compose --project-directory /home/spkane/dev/spkane/rtsp2prusa -f /home/spkane/dev/spkane/rtsp2prusa/docker-compose.yaml down
+
+[Install]
+WantedBy=default.target
